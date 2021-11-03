@@ -1,0 +1,15 @@
+{# -- Layout template for generic pages -- #}
+{% extends "_boilerplate/_layouts/generic-page-layout.twig" %}
+{# -- Any <meta> tags that should be included in the <head> #}
+{% block headMeta %}
+  <title>App Index | Home</title>
+{% endblock headMeta %}
+
+          {# -- Primary content block -- #}
+          {# -- Parent element is class=container, so class=row is ok -- #}
+          {% block content %}
+          <h1>Welcome to the App Homepage</h1>
+          <div class="fw-bold">
+            This is the main page for the app.
+          </div>
+          {% endblock %}
